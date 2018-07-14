@@ -1,0 +1,259 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+  color:#fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  width:100%;
+  height: 100%;
+  line-height: 2.1;
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+}
+
+h1, h2{
+	font-weight: normal;
+	color: #fff;
+}
+
+header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background: url(../img/Landingcontenido-03.png) top no-repeat;
+	background-size: 100% 90%;
+	position: relative;
+	z-index: 1;
+}
+
+.logo{
+	margin-top: 2%;
+	background: url(../img/mesfixlogo.svg) center no-repeat;
+	background-size: contain;
+	height: 45px;
+    width: 100%;
+}
+.banner_left{
+	background: url(../img/CELULAR.png) center no-repeat;
+	background-size: contain;
+	height: 750px;
+    width: 50%;
+}
+.banner_right{
+	width: 30%;
+	margin-bottom: 15%;
+}
+.subtitle{
+	color: #396286;
+	line-height: 1.5;
+}
+
+.subtitle_dark{
+	color: #1877A9;
+}
+
+.section, .section1, .section2, .section3, .section4{
+	padding: 2% 5% 5% 8%;
+}
+
+.section{
+	color: #959595;
+}
+
+.section2{
+	background: #0E406C;
+	color: #E2EFF9;
+}
+
+.section3{
+	color: #959595;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.section4{
+	color: #959595;
+	background: #ECEDEF;
+}
+
+.note{
+	padding: 4%;
+	background: #1C8EC2;
+	text-align: center;
+	color: #AED9F5;
+	font-style: italic;
+	line-height: 1.5;
+	font-size: 0.9em;
+	border: 1px solid #E1EEF8;
+	box-shadow:  -1px 1px 12px 2px rgba(196,190,196,1);
+	border-radius: 5px;
+	position:relative;
+}
+
+.mark1{
+	position: absolute;
+  	top: -23%;
+  	left: 3%;
+}
+
+.mark2{
+  	position: absolute;
+  	top: 80%;
+  	left: 90%;
+}
+
+.foot{
+	background:#19558A;
+	color: #97BBE1;
+	text-align: center;
+}
+
+.images{
+	display: flex;
+	flex-wrap: no-wrap;
+	text-align: center;
+	align-items: stretch;
+}
+
+footer{
+	display: flex;
+	justify-content: flex-end;
+    align-items: center;
+	background: #0E406C;
+	height: 10%;
+	width: 100%;
+	padding-right: 5%;
+}
+
+.copy{
+	font-size: 2em;
+}
+
+.year{
+font-size: small;
+color: #1A84B7;
+}
+
+aside{
+	display: flex;
+	flex-wrap: no-wrap;
+	background: linear-gradient(#1A84B7, #0F4370);
+	flex: 1 1 42%;
+	margin-top: -15%;
+} 
+
+.a{
+	flex: 1 1 58%;
+}
+
+#gadget{
+ text-align: center;
+ line-height: 2.1;
+}
+
+a{
+	text-decoration: none;
+	color:#fff;
+	padding: 3%;
+	background: #0D3960;
+	border-radius: 2%;
+}
+
+.graphics{
+	display: flex;
+	flex-wrap: no-wrap;
+	justify-content: center;
+	text-align: center;
+	color: #E2EFF9;
+	line-height: 1.5;
+
+}
+
+.ball0,.ball1,.ball2,.ball3,.ball4{
+    border-radius: 50%;
+    margin: 0 auto;
+    box-sizing: initial;
+    width: 120px;
+    height: 120px;
+    border: 4px solid #E2EFF9;
+}
+
+.ball0{
+    border-bottom: 4px solid rgba(51, 189, 192, 0.31);
+    border-right: 4px solid rgba(51, 189, 192, 0.31);
+}
+
+.ball1{
+    border-right: 4px solid rgba(51, 189, 192, 0.31);
+}
+
+.ball2{
+    border-top: 4px solid rgba(51, 189, 192, 0.31);
+}
+
+.ball3{
+    border-top: 4px solid rgba(51, 189, 192, 0.31);
+}
+
+.ball4{
+	border-bottom: 4px solid rgba(51, 189, 192, 0.31);
+}
+
+.number{
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
+a:hover { 
+    background-color: #001132;
+}
+
+.logo_gadget{
+display: flex;
+justify-content: flex-end;
+padding:10% 10% 0 0;
+}
+
+@media (max-width: 1302px){
+	aside{
+		display:none;
+	}
+}
+
+@media (min-width: 1303px){
+	aside{
+		display:block;
+	}
+}
+
+@media (max-width: 763px){
+	.graphics{
+	flex-wrap: wrap;
+}
+}
+
+ @media (max-width: 650px){
+header{
+	display: flex;
+	flex-direction: column;
+	background: url(../img/Landingcontenido-03.png) top no-repeat;
+	background-size: cover;
+}
+.logo{
+	margin-bottom: 2%;
+	height: 80px;
+}
+
+ .banner_right{
+	width: 80%;
+}
+}
+
