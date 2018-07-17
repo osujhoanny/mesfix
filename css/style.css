@@ -88,7 +88,7 @@ section{
 
 .graphics{
 	display: flex;
-	flex-wrap: no-wrap;
+	flex-wrap: wrap;
 	justify-content: center;
 	text-align: center;
 	color: #E2EFF9;
@@ -216,6 +216,7 @@ aside{
 #gadget{
  text-align: center;
  line-height: 2.1;
+ margin-top: 10%;
 }
 
 a{
@@ -229,7 +230,7 @@ a{
 
 /**********/
 
-@media(min-width: 1000px){
+@media(min-width: 1042px){
 main{
 	grid-template-areas: 
 	"header header"
@@ -253,11 +254,8 @@ aside{
 }
 .images{
 	flex-wrap: wrap;
-		justify-content: center;
+	justify-content: center;
 	text-align: center;
-}
-	.graphics{
-	flex-wrap: wrap;
 }
 .logo{
 	margin-bottom: 2%;

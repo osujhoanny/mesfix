@@ -148,13 +148,13 @@
 function cambioMediaQuery(mql) {
 
 var ancho = (document.body.clientWidth);
-if (ancho>=1000){
+if (ancho>=1042){
 function move() {
   var element = document.getElementById("gadget");
   var desiredPosition = 600;
   
   if (window.pageYOffset > desiredPosition) {
-    element.style.cssText += "position: fixed; top: auto; bottom: 40%; right: auto; left: auto;";
+    element.style.cssText += "position: fixed; top: auto; bottom: 30%; right: auto; left: auto;";
   }else {
     element.style.cssText += "position: relative; top: auto; bottom: 40%; right: auto; left: auto;";
   }
