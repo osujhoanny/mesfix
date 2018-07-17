@@ -148,7 +148,6 @@
 function cambioMediaQuery(mql) {
 
 var ancho = (document.body.clientWidth);
-	alert(ancho);
 if (ancho>=1000){
 function move() {
   var element = document.getElementById("gadget");
@@ -163,7 +162,6 @@ function move() {
 window.onscroll = move;
 mql.addListener(cambioMediaQuery);
 }else{
-	alert("es menor");
   	var element = document.getElementById("gadget");
   	element.removeEventListener("gadget");
 	element.style.cssText = "position: relative; top: 15px; bottom: 40%; right: auto; left: auto;";
