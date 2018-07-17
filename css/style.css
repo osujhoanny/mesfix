@@ -196,6 +196,11 @@ footer{
 	font-size: 2em;
 }
 
+.subtitle{
+	color: #396286;
+	line-height: 1.5;
+}
+
 .year{
 font-size: small;
 color: #1A84B7;
@@ -217,6 +222,8 @@ aside{
  text-align: center;
  line-height: 2.1;
  margin-top: 10%;
+ padding: 0 1% 0 1%;
+
 }
 
 a{

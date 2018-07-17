@@ -147,28 +147,25 @@
 
 function cambioMediaQuery(mql) {
 
-var ancho = (document.body.clientWidth);
-if (ancho>=1042){
-function move() {
-  var element = document.getElementById("gadget");
-  var desiredPosition = 600;
-  
-  if (window.pageYOffset > desiredPosition) {
-    element.style.cssText += "position: fixed; top: auto; bottom: 30%; right: auto; left: auto;";
-  }else {
-    element.style.cssText += "position: relative; top: auto; bottom: 40%; right: auto; left: auto;";
-  }
-}
-window.onscroll = move;
-mql.addListener(cambioMediaQuery);
-}else{
-  	var element = document.getElementById("gadget");
-  	element.removeEventListener("gadget");
-	element.style.cssText = "position: relative; top: 15px; bottom: 40%; right: auto; left: auto;";
-}
+var element = document.getElementById("gadget");
+	window.onscroll = move; 
+	function move() {
+	if (mql.matches){
+	  var desiredPosition = 600;
+	 if (window.pageYOffset > desiredPosition) {
+	    element.style.cssText += "position: fixed; top: auto; bottom: 30%; right: auto; left: auto;";
+	  }else {
+	    element.style.cssText += "position: relative; top: auto; bottom: 40%; right: auto; left: auto;";
+	  }
+	}else{
+		element.style.cssText = "position: relative; top: 5px; bottom: 40%; right: auto; left: auto;";
+	}
+	window.onscroll = move; 
+	}
 }
 
-var mql = window.matchMedia("screen and (min-width: 1000px)");
+var mql = window.matchMedia("screen and (min-width: 1042px)");
 cambioMediaQuery(mql);
 mql.addListener(cambioMediaQuery);
+
 </script>
