@@ -34,10 +34,6 @@ header{
 section{
 	grid-area: section;
 }
-footer{
-	grid-area: footer;
-}
-
 /*responsive*/
 /***********/
 .logo{
@@ -58,7 +54,7 @@ footer{
 	margin-bottom: 15%;
 }
 
-.section, .section1, .section2, .section3, .section4{
+.section, .section1, .section3, .section4{
 	padding: 2% 5% 5% 8%;
 }
 
@@ -67,6 +63,7 @@ footer{
 }
 
 .section2{
+	padding: 2% 0 5% 0;
 	background: #0E406C;
 	color: #E2EFF9;
 }
@@ -81,6 +78,13 @@ footer{
 	color: #959595;
 	background: #ECEDEF;
 }
+.article_section2{
+	padding: 0 5% 0 5%;
+}
+.subtitle_dark{
+	color: #1877A9;
+	padding: 0 5% 0 5%;
+}
 
 .graphics{
 	display: flex;
@@ -89,6 +93,7 @@ footer{
 	text-align: center;
 	color: #E2EFF9;
 	line-height: 1.5;
+	padding: 0 5% 0 5%;
 
 }
 
@@ -178,12 +183,12 @@ padding:10% 10% 0 0;
 }
 
 footer{
+	grid-area: footer;
 	display: flex;
 	justify-content: flex-end;
     align-items: center;
 	background: #0E406C;
 	height: 100%;
-	width: 100%;
 	padding-right: 5%;
 }
 
@@ -237,6 +242,30 @@ main{
 aside{
 	margin-top: -30%;
 } 
+}
+
+@media (max-width: 730px){
+	header{
+	display: flex;
+	flex-direction: column;
+	background: url(../img/Landingcontenido-03.png) top no-repeat;
+	background-size: cover;
+}
+.images{
+	flex-wrap: wrap;
+		justify-content: center;
+	text-align: center;
+}
+	.graphics{
+	flex-wrap: wrap;
+}
+.logo{
+	margin-bottom: 2%;
+	height: 80px;
+}
+ .banner_right{
+	width: 80%;
+}
 }
 /**********/
 

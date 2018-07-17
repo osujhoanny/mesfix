@@ -53,7 +53,7 @@
 		<div class="section2">
 		<h2 class="subtitle_dark">Índice de factoring en Colombia</h2>
 		<br>
-		<article>
+		<article class="article_section2">
 				<p>
 				A pesar de la aprobación de la ley por impulsar el factoring en Colombia como mecanismo de financiación, aún falta un trabajo fuerte de educación de las mipymes. Algunas ni siquiera saben en qué consiste ese mecanismo ni las condiciones para poder utilizarlo.<br>
 				<br>
@@ -146,8 +146,9 @@
 <script type="text/javascript">
 
 function cambioMediaQuery(mql) {
+
 var ancho = (document.body.clientWidth);
-	
+	alert(ancho);
 if (ancho>=1000){
 function move() {
   var element = document.getElementById("gadget");
@@ -155,17 +156,21 @@ function move() {
   
   if (window.pageYOffset > desiredPosition) {
     element.style.cssText += "position: fixed; top: auto; bottom: 40%; right: auto; left: auto;";
-  } else {
+  }else {
     element.style.cssText += "position: relative; top: auto; bottom: 40%; right: auto; left: auto;";
   }
 }
 window.onscroll = move;
 mql.addListener(cambioMediaQuery);
+}else{
+	alert("es menor");
+  	var element = document.getElementById("gadget");
+  	element.removeEventListener("gadget");
+	element.style.cssText = "position: relative; top: 15px; bottom: 40%; right: auto; left: auto;";
 }
 }
 
 var mql = window.matchMedia("screen and (min-width: 1000px)");
 cambioMediaQuery(mql);
 mql.addListener(cambioMediaQuery);
-
 </script>
