@@ -1,13 +1,14 @@
-<!DOCTYPE html lang='es'>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+	<meta charset="utf-8">
 	<title>Factoring en Colombia</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
-	<div class="contenedor">
+	<main>
 		<header>
 			<div class="logo">
 			</div>
@@ -26,8 +27,8 @@
 					</p>	
 			</div>
 		</header>
-		<div class="a">
-		<div class="section">
+		<section>
+			<div class="section">
 			<h2 class="subtitle">¿Por qué nace el factoring en Colombia?</h2>
 			<br>
 			<article>
@@ -71,11 +72,10 @@
     			<div class="ball3"><span class="number">8%</span><br>Crédito bancario</div>
     			<div class="ball4"><span class="number">3%</span><br>Factoring</div>
 		</div>
-		</div>
 		<div class="foot">
 			*Datos tomados de la Encuesta de Desempeño Empresarial del 3er Trimestre de 2017.
 		</div>
-		<div class="section2"></div>
+		</div>
 		<div class="section3">
 		<p>
 			La Gran Encuesta Pyme también refleja el poco uso que las pequeñas y medianas empresas le dan a factoring. En una entrevista para Dinero, el presidente de la ANIF, Sergio Clavijo, afirma que uno de los principales desafíos de las pymes colombianas es:
@@ -118,9 +118,9 @@
 		</div>
 		</div>
 		</div>
-	</div>
+		</section>
 		<aside>
-		<div id="gadget">
+			<div id="gadget">
 			<h2>¿Tienes facturas por cobrar?</h2>
 			<p>
 				Conoce Mesfix, donde podrás venderlas en línea, sin afectar tu capacidad
@@ -140,12 +140,15 @@
 			<img src="img/mesfixlogo.svg" height="20px;">
 			<span class="year">&nbsp;2018</span>
 		</footer>
-</div>
+	</main>
 </body>
 </html>
-
 <script type="text/javascript">
 
+function cambioMediaQuery(mql) {
+var ancho = (document.body.clientWidth);
+	
+if (ancho>=1000){
 function move() {
   var element = document.getElementById("gadget");
   var desiredPosition = 600;
@@ -153,8 +156,18 @@ function move() {
   if (window.pageYOffset > desiredPosition) {
     element.style.cssText += "position: fixed; top: auto; bottom: 40%; right: auto; left: auto;";
   } else {
-    element.style.cssText += "position: relative; top: 6%; bottom: 30%; right: auto; left: auto;";
+    element.style.cssText += "position: relative; top: auto; bottom: 40%; right: auto; left: auto;";
   }
 }
 window.onscroll = move;
+mql.addListener(cambioMediaQuery);
+}
+}
+
+var mql = window.matchMedia("screen and (min-width: 1000px)");
+cambioMediaQuery(mql);
+mql.addListener(cambioMediaQuery);
+
+
+
 </script>
