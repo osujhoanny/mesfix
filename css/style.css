@@ -13,6 +13,7 @@ main{
 	background: #fff;
 	color: white;
 	height: 100%;
+	line-height: 2;
 }
 main > *{
 	display: flex;
@@ -55,7 +56,7 @@ section{
 }
 
 .section, .section1, .section3, .section4{
-	padding: 2% 5% 5% 8%;
+	padding: 3% 6% 5% 9%;
 }
 
 .section{
@@ -67,7 +68,9 @@ section{
 	background: #0E406C;
 	color: #E2EFF9;
 }
-
+.section2 p{
+	padding: 0 0 0 5%;
+}
 .section3{
 	color: #959595;
 	display: flex;
@@ -83,7 +86,7 @@ section{
 }
 .subtitle_dark{
 	color: #1877A9;
-	padding: 0 5% 0 5%;
+	padding: 0 5% 0 9%;
 }
 
 .graphics{
@@ -104,6 +107,7 @@ section{
     width: 120px;
     height: 120px;
     border: 4px solid #E2EFF9;
+    font-size: medium;
 }
 
 .ball0{
@@ -128,7 +132,7 @@ section{
 }
 
 .note{
-	padding: 4%;
+	padding: 5% 3% 5% 3%;
 	background: #1C8EC2;
 	text-align: center;
 	color: #AED9F5;
@@ -182,6 +186,10 @@ padding:10% 10% 0 0;
 	align-items: stretch;
 }
 
+.images span{
+	display: block;
+}
+
 footer{
 	grid-area: footer;
 	display: flex;
@@ -209,7 +217,7 @@ color: #1A84B7;
 aside{
 	grid-area: aside;
 	display: flex;
-	flex-wrap: no-wrap;
+	flex-wrap: wrap;
 	background: linear-gradient(#1A84B7, #0F4370);
 	flex: 1 1 42%;
 	margin-top: -30%;
@@ -234,6 +242,17 @@ a{
 	border-radius: 2%;
 }
 
+aside p {
+	margin: 0 4% 0 4%;
+}
+
+header h1{
+	display: none;
+}
+
+.banner_right h1{
+	display: block;
+} 
 
 /**********/
 
@@ -251,9 +270,12 @@ aside{
 	margin-top: -30%;
 } 
 }
-
+/****************/
 @media (max-width: 730px){
-	header{
+main{
+	font-size: 1.5em;
+}
+header{
 	display: flex;
 	flex-direction: column;
 	background: url(../img/Landingcontenido-03.png) top no-repeat;
@@ -270,6 +292,48 @@ aside{
 }
  .banner_right{
 	width: 80%;
+}
+.banner_right h1{
+	display: none;
+} 
+
+a{
+	display: block;
+	margin: 2%;
+}
+.logo_gadget{
+	display: none;
+}
+header h1{
+	display: block;
+	width: 50%;
+    line-height: 1.2;
+
+}
+
+.mark1 {
+    position: absolute;
+    top: -10%;
+    left: 1%;
+}
+
+.mark2 {
+    position: absolute;
+    top: 90%;
+    left: 89%;
+}
+footer{
+	justify-content: center;
+}
+footer img{
+	height: 50px;
+}
+.year {
+    font-size: large;
+    margin-top: 5%;
+}
+aside{
+	padding-top: 25%;
 }
 }
 /**********/
